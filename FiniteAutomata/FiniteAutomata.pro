@@ -17,13 +17,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainmenu.cpp
+    mainmenu.cpp \
+    regexpresion.cpp \
+    statetable.cpp \
+    statetablecontent.cpp
 
 HEADERS += \
-    mainmenu.h
+    mainmenu.h \
+    regexpresion.h \
+    statetable.h \
+    statetablecontent.h
 
 FORMS += \
-    mainmenu.ui
+    mainmenu.ui \
+    regexpresion.ui \
+    statetable.ui \
+    statetablecontent.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
