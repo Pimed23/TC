@@ -16,17 +16,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    automata.cpp \
     main.cpp \
     mainmenu.cpp \
     regexpresion.cpp \
     statetable.cpp \
-    statetablecontent.cpp
+    statetablecontent.cpp \
+    tools.cpp
 
 HEADERS += \
+    automata.h \
     mainmenu.h \
     regexpresion.h \
     statetable.h \
-    statetablecontent.h
+    statetablecontent.h \
+    tools.h
 
 FORMS += \
     mainmenu.ui \

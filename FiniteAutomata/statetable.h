@@ -3,6 +3,10 @@
 
 #include <QDialog>
 #include "statetablecontent.h"
+#include "automata.h"
+#include "tools.h"
+
+extern Automata *automata;
 
 namespace Ui {
 class StateTable;

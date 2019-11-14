@@ -2,6 +2,10 @@
 #define STATETABLECONTENT_H
 
 #include <QDialog>
+#include <climits>
+#include "automata.h"
+
+extern Automata *automata;
 
 namespace Ui {
 class stateTableContent;
