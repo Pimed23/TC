@@ -16,12 +16,36 @@ void Automata::createAutomata(vector<QString> S, vector<QString> A, vector<QStri
     this -> iS = iS;
 }
 
+void Automata::generateTransition( vector<QString> Tr ) {
+    size_t k = 0;
+    for( size_t i = 0; i < S.size(); ++i ) {
+        for( size_t j = 0; j < A.size(); ++j ) {
+            T[ i ][ j ] = Tr[ k ];
+            ++k;
+        }
+    }
+}
+
+void Automata::printAutomata() {
+    qDebug() << T;
+}
+
 vector<QString> Automata::getState() {
     return S;
 }
 
 vector<QString> Automata::getAlphabet() {
     return A;
+}
+
+int Automata::getNumberStates() {
+    int count = S.size() & INT_MAX;
+    return count;
+}
+
+int Automata::getNumberAlphabet() {
+    int count = A.size() & INT_MAX;
+    return count;
 }
 
 

@@ -39,3 +39,20 @@ stateTableContent::~stateTableContent() {
 void stateTableContent::on_pushBack_clicked() {
     emit( back());
 }
+
+void stateTableContent::on_pushDraw_clicked() {
+    QString trans;
+    int nS = automata -> getNumberStates();
+    int nA = automata -> getNumberAlphabet();
+    vector<QString> Tr;
+
+    for( int i = 0; i < nS; ++i ) {
+        for( int j = 0; j < nA; ++j ) {
+            Tr.push_back( ui -> transTableContent -> item( i, j ) -> text());
+        }
+    }
+
+    qDebug() << Tr;
+    automata -> generateTransition( Tr );
+    // automata -> printAutomata();
+}

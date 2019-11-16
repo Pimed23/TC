@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <QString>
+#include <QDebug>
+#include <climits>
 
 using namespace std;
 
@@ -13,8 +15,14 @@ class Automata {
         ~Automata();
 
         void createAutomata( vector<QString> S, vector<QString> A, vector<QString> fS, QString iS );
+        void generateTransition( vector<QString> T );
+        void printAutomata();
+
         vector<QString> getState();
         vector<QString> getAlphabet();
+
+        int getNumberStates();
+        int getNumberAlphabet();
 
     private:
         vector<QString> S; // States

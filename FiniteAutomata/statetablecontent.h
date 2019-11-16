@@ -2,6 +2,7 @@
 #define STATETABLECONTENT_H
 
 #include <QDialog>
+#include <QDebug>
 #include <climits>
 #include "automata.h"
 
@@ -24,6 +25,7 @@ signals:
 
 private slots:
     void on_pushBack_clicked();
+    void on_pushDraw_clicked();
 
 private:
     Ui::stateTableContent *ui;

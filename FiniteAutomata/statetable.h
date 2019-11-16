@@ -6,6 +6,7 @@
 #include "automata.h"
 #include "tools.h"
 
+
 extern Automata *automata;
 
 namespace Ui {
@@ -26,7 +27,6 @@ signals:
 private slots:
     void hideWindow();
     void on_pushBack_clicked();
-
     void on_pushConvert_clicked();
 
 private:

@@ -32,7 +32,7 @@
     <string>Ingrese los datos separados por una (,):</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -100,7 +100,7 @@
       <item>
        <widget class="QPushButton" name="pushConvert">
         <property name="text">
-         <string>Convertir</string>
+         <string>Generar</string>
         </property>
        </widget>
       </item>
