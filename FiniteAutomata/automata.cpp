@@ -19,10 +19,12 @@ void Automata::createAutomata(vector<QString> S, vector<QString> A, vector<QStri
 void Automata::generateTransition( vector<QString> Tr ) {
     size_t k = 0;
     for( size_t i = 0; i < S.size(); ++i ) {
+        vector<QString> temp;
         for( size_t j = 0; j < A.size(); ++j ) {
-            T[ i ][ j ] = Tr[ k ];
+            temp.push_back( Tr[ k ]);
             ++k;
         }
+        T.push_back( temp );
     }
 }
 

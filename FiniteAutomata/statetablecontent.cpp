@@ -54,5 +54,5 @@ void stateTableContent::on_pushDraw_clicked() {
 
     qDebug() << Tr;
     automata -> generateTransition( Tr );
-    // automata -> printAutomata();
+    automata -> printAutomata();
 }
