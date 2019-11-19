@@ -20,9 +20,13 @@ class Automata {
 
         vector<QString> getState();
         vector<QString> getAlphabet();
+        vector<QString> getFinals();
+        QString getInitial();
+        vector<vector<QString>> getTransitions();
 
         int getNumberStates();
         int getNumberAlphabet();
+        int getNumberFinals();
 
     private:
         vector<QString> S; // States

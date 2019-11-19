@@ -40,6 +40,18 @@ vector<QString> Automata::getAlphabet() {
     return A;
 }
 
+vector<QString> Automata::getFinals(){
+    return fS;
+}
+
+QString Automata::getInitial(){
+    return iS;
+}
+
+vector<vector<QString>> Automata::getTransitions(){
+    return T;
+}
+
 int Automata::getNumberStates() {
     int count = S.size() & INT_MAX;
     return count;
@@ -47,6 +59,11 @@ int Automata::getNumberStates() {
 
 int Automata::getNumberAlphabet() {
     int count = A.size() & INT_MAX;
+    return count;
+}
+
+int Automata::getNumberFinals(){
+    int count = fS.size() & INT_MAX;
     return count;
 }
 

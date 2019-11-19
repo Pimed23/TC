@@ -1,5 +1,6 @@
 #include "statetablecontent.h"
 #include "ui_statetablecontent.h"
+#include "tools.h"
 
 stateTableContent::stateTableContent(QWidget *parent) :
     QDialog(parent),
@@ -55,4 +56,7 @@ void stateTableContent::on_pushDraw_clicked() {
     qDebug() << Tr;
     automata -> generateTransition( Tr );
     automata -> printAutomata();
+    automataToGraph(automata);    
+    QPixmap pix("/home/toka/Desktop/TC-master/build-FiniteAutomata-Desktop_Qt_5_13_1_GCC_64bit-Debug/outImagen.png");
+    ui->image->setPixmap(pix);
 }
