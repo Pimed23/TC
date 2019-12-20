@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'statetable.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -136,14 +136,14 @@ public:
 
     void retranslateUi(QDialog *StateTable)
     {
-        StateTable->setWindowTitle(QCoreApplication::translate("StateTable", "Dialog", nullptr));
-        indication1->setText(QCoreApplication::translate("StateTable", "Ingrese los datos separados por una (,):", nullptr));
-        state->setText(QCoreApplication::translate("StateTable", "Ingrese los estados:", nullptr));
-        alfabeth->setText(QCoreApplication::translate("StateTable", "Ingrese el alfabeto:", nullptr));
-        inicialState->setText(QCoreApplication::translate("StateTable", "Ingrese el estado inicial:", nullptr));
-        finalState->setText(QCoreApplication::translate("StateTable", "Ingrese el/los estados finales:", nullptr));
-        pushConvert->setText(QCoreApplication::translate("StateTable", "Generar", nullptr));
-        pushBack->setText(QCoreApplication::translate("StateTable", "Volver", nullptr));
+        StateTable->setWindowTitle(QApplication::translate("StateTable", "Dialog", nullptr));
+        indication1->setText(QApplication::translate("StateTable", "Ingrese los datos separados por una (,):", nullptr));
+        state->setText(QApplication::translate("StateTable", "Ingrese los estados:", nullptr));
+        alfabeth->setText(QApplication::translate("StateTable", "Ingrese el alfabeto:", nullptr));
+        inicialState->setText(QApplication::translate("StateTable", "Ingrese el estado inicial:", nullptr));
+        finalState->setText(QApplication::translate("StateTable", "Ingrese el/los estados finales:", nullptr));
+        pushConvert->setText(QApplication::translate("StateTable", "Generar", nullptr));
+        pushBack->setText(QApplication::translate("StateTable", "Volver", nullptr));
     } // retranslateUi
 
 };

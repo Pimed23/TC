@@ -22,7 +22,8 @@ SOURCES += \
     regexpresion.cpp \
     statetable.cpp \
     statetablecontent.cpp \
-    tools.cpp
+    tools.cpp \
+    utilities2convert.cpp
 
 HEADERS += \
     automata.h \
@@ -30,7 +31,8 @@ HEADERS += \
     regexpresion.h \
     statetable.h \
     statetablecontent.h \
-    tools.h
+    tools.h \
+    utilities2convert.h
 
 FORMS += \
     mainmenu.ui \

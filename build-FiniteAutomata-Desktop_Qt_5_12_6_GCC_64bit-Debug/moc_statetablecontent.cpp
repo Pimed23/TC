@@ -1,19 +1,18 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'regexpresion.h'
+** Meta object code from reading C++ file 'statetablecontent.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.13.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.6)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
-#include "../FiniteAutomata/regexpresion.h"
+#include "../TC JEFF/statetablecontent.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'regexpresion.h' doesn't include <QObject>."
+#error "The header file 'statetablecontent.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.13.1. It"
+#error "This file was generated using the moc from 5.12.6. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -21,34 +20,36 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_regExpresion_t {
-    QByteArrayData data[4];
-    char stringdata0[39];
+struct qt_meta_stringdata_stateTableContent_t {
+    QByteArrayData data[5];
+    char stringdata0[64];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_regExpresion_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_stateTableContent_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_regExpresion_t qt_meta_stringdata_regExpresion = {
+static const qt_meta_stringdata_stateTableContent_t qt_meta_stringdata_stateTableContent = {
     {
-QT_MOC_LITERAL(0, 0, 12), // "regExpresion"
-QT_MOC_LITERAL(1, 13, 4), // "back"
-QT_MOC_LITERAL(2, 18, 0), // ""
-QT_MOC_LITERAL(3, 19, 19) // "on_pushBack_clicked"
+QT_MOC_LITERAL(0, 0, 17), // "stateTableContent"
+QT_MOC_LITERAL(1, 18, 4), // "back"
+QT_MOC_LITERAL(2, 23, 0), // ""
+QT_MOC_LITERAL(3, 24, 19), // "on_pushBack_clicked"
+QT_MOC_LITERAL(4, 44, 19) // "on_pushDraw_clicked"
 
     },
-    "regExpresion\0back\0\0on_pushBack_clicked"
+    "stateTableContent\0back\0\0on_pushBack_clicked\0"
+    "on_pushDraw_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_regExpresion[] = {
+static const uint qt_meta_data_stateTableContent[] = {
 
  // content:
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -56,35 +57,38 @@ static const uint qt_meta_data_regExpresion[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x06 /* Public */,
+       1,    0,   29,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       3,    0,   25,    2, 0x08 /* Private */,
+       3,    0,   30,    2, 0x08 /* Private */,
+       4,    0,   31,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
 
  // slots: parameters
     QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
 
-void regExpresion::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void stateTableContent::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<regExpresion *>(_o);
+        auto *_t = static_cast<stateTableContent *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->back(); break;
         case 1: _t->on_pushBack_clicked(); break;
+        case 2: _t->on_pushDraw_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (regExpresion::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&regExpresion::back)) {
+            using _t = void (stateTableContent::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&stateTableContent::back)) {
                 *result = 0;
                 return;
             }
@@ -93,48 +97,48 @@ void regExpresion::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject regExpresion::staticMetaObject = { {
+QT_INIT_METAOBJECT const QMetaObject stateTableContent::staticMetaObject = { {
     &QDialog::staticMetaObject,
-    qt_meta_stringdata_regExpresion.data,
-    qt_meta_data_regExpresion,
+    qt_meta_stringdata_stateTableContent.data,
+    qt_meta_data_stateTableContent,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *regExpresion::metaObject() const
+const QMetaObject *stateTableContent::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *regExpresion::qt_metacast(const char *_clname)
+void *stateTableContent::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_regExpresion.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_stateTableContent.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
-int regExpresion::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int stateTableContent::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }
 
 // SIGNAL 0
-void regExpresion::back()
+void stateTableContent::back()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }

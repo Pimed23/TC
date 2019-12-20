@@ -9,11 +9,23 @@ Automata::Automata(vector<QString> S, vector<QString> A, vector<QString> fS, QSt
     createAutomata( S, A, fS, iS );
 }
 
+Automata::Automata(vector<QString> S, vector<QString> A, vector<QString> fS, QString iS, vector<vector<QString> > T ){
+    createFullAutomata( S, A, fS, iS, T );
+}
+
 void Automata::createAutomata(vector<QString> S, vector<QString> A, vector<QString> fS, QString iS ) {
     this -> S = S;
     this -> A = A;
     this -> fS = fS;
     this -> iS = iS;
+}
+
+void Automata::createFullAutomata(vector<QString> S, vector<QString> A, vector<QString> fS, QString iS, vector<vector<QString> > T ) {
+    this -> S = S;
+    this -> A = A;
+    this -> fS = fS;
+    this -> iS = iS;
+    this -> T = T;
 }
 
 void Automata::generateTransition( vector<QString> Tr ) {

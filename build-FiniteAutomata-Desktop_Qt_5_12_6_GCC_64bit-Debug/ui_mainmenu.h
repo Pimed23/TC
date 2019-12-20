@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainmenu.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -63,9 +63,9 @@ public:
 
     void retranslateUi(QMainWindow *MainMenu)
     {
-        MainMenu->setWindowTitle(QCoreApplication::translate("MainMenu", "MainMenu", nullptr));
-        pushStateTable->setText(QCoreApplication::translate("MainMenu", "De Automata a Regex", nullptr));
-        pushRegExpresion->setText(QCoreApplication::translate("MainMenu", "De Regex a Automata", nullptr));
+        MainMenu->setWindowTitle(QApplication::translate("MainMenu", "MainMenu", nullptr));
+        pushStateTable->setText(QApplication::translate("MainMenu", "De Automata a Regex", nullptr));
+        pushRegExpresion->setText(QApplication::translate("MainMenu", "De Regex a Automata", nullptr));
     } // retranslateUi
 
 };

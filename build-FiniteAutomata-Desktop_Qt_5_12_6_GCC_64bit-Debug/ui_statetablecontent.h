@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'statetablecontent.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -192,11 +192,11 @@ public:
 
     void retranslateUi(QDialog *stateTableContent)
     {
-        stateTableContent->setWindowTitle(QCoreApplication::translate("stateTableContent", "Dialog", nullptr));
-        regex->setText(QCoreApplication::translate("stateTableContent", "Expresion Regular", nullptr));
-        transTable->setText(QCoreApplication::translate("stateTableContent", "Tabla de transiciones", nullptr));
-        pushDraw->setText(QCoreApplication::translate("stateTableContent", "Dibujar", nullptr));
-        pushBack->setText(QCoreApplication::translate("stateTableContent", "Volver", nullptr));
+        stateTableContent->setWindowTitle(QApplication::translate("stateTableContent", "Dialog", nullptr));
+        regex->setText(QApplication::translate("stateTableContent", "Expresion Regular", nullptr));
+        transTable->setText(QApplication::translate("stateTableContent", "Tabla de transiciones", nullptr));
+        pushDraw->setText(QApplication::translate("stateTableContent", "Dibujar", nullptr));
+        pushBack->setText(QApplication::translate("stateTableContent", "Volver", nullptr));
         spacer1->setText(QString());
         image->setText(QString());
     } // retranslateUi

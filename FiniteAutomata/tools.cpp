@@ -72,5 +72,5 @@ void automataToGraph(Automata* automata){
     out<<finalTxt;
     file.close();
 
-    system("dot -Tpng  /home/toka/Desktop/TC-master/build-FiniteAutomata-Desktop_Qt_5_13_1_GCC_64bit-Debug/outImagen.txt -o outImagen.png");
+    system("dot -Tpng /home/pimed/Documents/TC/build-FiniteAutomata-Desktop_Qt_5_12_6_GCC_64bit-Debug/outImagen.txt -o outImagen.png");
 }

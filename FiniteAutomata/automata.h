@@ -12,9 +12,10 @@ class Automata {
     public:
         Automata();
         Automata( vector<QString> S, vector<QString> A, vector<QString> fS, QString iS );
-        ~Automata();
+        Automata( vector<QString> S, vector<QString> A, vector<QString> fS, QString iS, vector<vector<QString>> T );
 
         void createAutomata( vector<QString> S, vector<QString> A, vector<QString> fS, QString iS );
+        void createFullAutomata( vector<QString> S, vector<QString> A, vector<QString> fS, QString iS, vector<vector<QString> > T );
         void generateTransition( vector<QString> T );
         void printAutomata();
 

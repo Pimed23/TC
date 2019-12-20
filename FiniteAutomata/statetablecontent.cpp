@@ -57,6 +57,6 @@ void stateTableContent::on_pushDraw_clicked() {
     automata -> generateTransition( Tr );
     automata -> printAutomata();
     automataToGraph(automata);    
-    QPixmap pix("/home/toka/Desktop/TC-master/build-FiniteAutomata-Desktop_Qt_5_13_1_GCC_64bit-Debug/outImagen.png");
+    QPixmap pix("/home/pimed/Documents/TC/build-FiniteAutomata-Desktop_Qt_5_12_6_GCC_64bit-Debug/outImagen.png");
     ui->image->setPixmap(pix);
 }

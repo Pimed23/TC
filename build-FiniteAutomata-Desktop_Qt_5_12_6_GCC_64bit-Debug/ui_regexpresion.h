@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'regexpresion.ui'
 **
-** Created by: Qt User Interface Compiler version 5.13.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -27,8 +28,8 @@ QT_BEGIN_NAMESPACE
 class Ui_regExpresion
 {
 public:
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout_5;
+    QGraphicsView *automataImage;
+    QWidget *widget;
     QHBoxLayout *commandLayout;
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
@@ -38,7 +39,7 @@ public:
     QSpacerItem *horizontalSpacer_5;
     QPushButton *pushRegexTable;
     QSpacerItem *horizontalSpacer_6;
-    QLabel *label;
+    QLabel *respuesta;
     QLabel *transTable;
     QTableWidget *transTableContent;
     QHBoxLayout *horizontalLayout;
@@ -46,41 +47,31 @@ public:
     QSpacerItem *horizontalSpacer;
     QPushButton *pushBack;
     QSpacerItem *horizontalSpacer_2;
-    QLabel *spacer;
-    QWidget *imageLayout;
-    QHBoxLayout *horizontalSpacer_7;
-    QWidget *horizontalLayout_4;
-    QVBoxLayout *verticalLayout_3;
-    QSpacerItem *verticalSpacer;
-    QHBoxLayout *horizontalLayout_2;
-    QSpacerItem *horizontalSpacer_3;
-    QLabel *image;
-    QSpacerItem *horizontalSpacer_4;
-    QSpacerItem *verticalSpacer_2;
 
     void setupUi(QDialog *regExpresion)
     {
         if (regExpresion->objectName().isEmpty())
             regExpresion->setObjectName(QString::fromUtf8("regExpresion"));
-        regExpresion->resize(800, 400);
-        layoutWidget = new QWidget(regExpresion);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(30, 20, 741, 361));
-        horizontalLayout_5 = new QHBoxLayout(layoutWidget);
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
-        horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
-        commandLayout = new QHBoxLayout();
+        regExpresion->resize(1000, 450);
+        automataImage = new QGraphicsView(regExpresion);
+        automataImage->setObjectName(QString::fromUtf8("automataImage"));
+        automataImage->setGeometry(QRect(460, 20, 511, 391));
+        widget = new QWidget(regExpresion);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(50, 20, 367, 391));
+        commandLayout = new QHBoxLayout(widget);
         commandLayout->setObjectName(QString::fromUtf8("commandLayout"));
+        commandLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        regex = new QLabel(layoutWidget);
+        regex = new QLabel(widget);
         regex->setObjectName(QString::fromUtf8("regex"));
 
         verticalLayout->addWidget(regex);
 
-        regexContent = new QLineEdit(layoutWidget);
+        regexContent = new QLineEdit(widget);
         regexContent->setObjectName(QString::fromUtf8("regexContent"));
 
         verticalLayout->addWidget(regexContent);
@@ -91,7 +82,7 @@ public:
 
         horizontalLayout_3->addItem(horizontalSpacer_5);
 
-        pushRegexTable = new QPushButton(layoutWidget);
+        pushRegexTable = new QPushButton(widget);
         pushRegexTable->setObjectName(QString::fromUtf8("pushRegexTable"));
 
         horizontalLayout_3->addWidget(pushRegexTable);
@@ -103,17 +94,18 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_3);
 
-        label = new QLabel(layoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
+        respuesta = new QLabel(widget);
+        respuesta->setObjectName(QString::fromUtf8("respuesta"));
+        respuesta->setAlignment(Qt::AlignCenter);
 
-        verticalLayout->addWidget(label);
+        verticalLayout->addWidget(respuesta);
 
-        transTable = new QLabel(layoutWidget);
+        transTable = new QLabel(widget);
         transTable->setObjectName(QString::fromUtf8("transTable"));
 
         verticalLayout->addWidget(transTable);
 
-        transTableContent = new QTableWidget(layoutWidget);
+        transTableContent = new QTableWidget(widget);
         transTableContent->setObjectName(QString::fromUtf8("transTableContent"));
 
         verticalLayout->addWidget(transTableContent);
@@ -132,7 +124,7 @@ public:
 
         horizontalLayout_6->addItem(horizontalSpacer);
 
-        pushBack = new QPushButton(layoutWidget);
+        pushBack = new QPushButton(widget);
         pushBack->setObjectName(QString::fromUtf8("pushBack"));
 
         horizontalLayout_6->addWidget(pushBack);
@@ -147,54 +139,6 @@ public:
 
         commandLayout->addLayout(verticalLayout_2);
 
-        spacer = new QLabel(layoutWidget);
-        spacer->setObjectName(QString::fromUtf8("spacer"));
-
-        commandLayout->addWidget(spacer);
-
-
-        horizontalLayout_5->addLayout(commandLayout);
-
-        imageLayout = new QWidget(layoutWidget);
-        imageLayout->setObjectName(QString::fromUtf8("imageLayout"));
-        horizontalSpacer_7 = new QHBoxLayout(imageLayout);
-        horizontalSpacer_7->setObjectName(QString::fromUtf8("horizontalSpacer_7"));
-        horizontalLayout_4 = new QWidget(imageLayout);
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
-        verticalLayout_3 = new QVBoxLayout(horizontalLayout_4);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_3->addItem(verticalSpacer);
-
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer_3);
-
-        image = new QLabel(horizontalLayout_4);
-        image->setObjectName(QString::fromUtf8("image"));
-
-        horizontalLayout_2->addWidget(image);
-
-        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer_4);
-
-
-        verticalLayout_3->addLayout(horizontalLayout_2);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_3->addItem(verticalSpacer_2);
-
-
-        horizontalSpacer_7->addWidget(horizontalLayout_4);
-
-
-        horizontalLayout_5->addWidget(imageLayout);
-
 
         retranslateUi(regExpresion);
 
@@ -203,14 +147,12 @@ public:
 
     void retranslateUi(QDialog *regExpresion)
     {
-        regExpresion->setWindowTitle(QCoreApplication::translate("regExpresion", "Dialog", nullptr));
-        regex->setText(QCoreApplication::translate("regExpresion", "Ingrese su expresion Regular:", nullptr));
-        pushRegexTable->setText(QCoreApplication::translate("regExpresion", "Convertir", nullptr));
-        label->setText(QString());
-        transTable->setText(QCoreApplication::translate("regExpresion", "Tabla de transiciones", nullptr));
-        pushBack->setText(QCoreApplication::translate("regExpresion", "Volver", nullptr));
-        spacer->setText(QString());
-        image->setText(QString());
+        regExpresion->setWindowTitle(QApplication::translate("regExpresion", "Dialog", nullptr));
+        regex->setText(QApplication::translate("regExpresion", "Ingrese su expresion Regular:", nullptr));
+        pushRegexTable->setText(QApplication::translate("regExpresion", "Convertir", nullptr));
+        respuesta->setText(QString());
+        transTable->setText(QApplication::translate("regExpresion", "Tabla de transiciones", nullptr));
+        pushBack->setText(QApplication::translate("regExpresion", "Volver", nullptr));
     } // retranslateUi
 
 };
